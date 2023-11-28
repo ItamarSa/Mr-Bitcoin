@@ -1,0 +1,28 @@
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007FFF;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+
+    .logo {
+        flex-grow: 1;
+        text-decoration: none;
+    }
+
+    nav {
+        a {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            &.active {
+                color: darkblue;
+                font-weight: bold;
+            }
+        }
+    }
+}

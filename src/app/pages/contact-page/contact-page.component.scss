@@ -1,0 +1,21 @@
+.contact-page {
+    text-align: center;
+
+    .add-contact {
+        background-color: #007FFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 0 10px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #005a9e;
+        }
+    }
+}

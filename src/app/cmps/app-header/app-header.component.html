@@ -1,0 +1,10 @@
+<header class="container">
+    <a  [routerLink]="['/home', userId]" class="logo"><h1 class="logo">Mr Bitcoin</h1></a>
+    <nav>
+        <a [routerLink]="['/home', userId]" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        <a routerLink="/contact" routerLinkActive="active">Contacts</a>
+        <a routerLink="/about" routerLinkActive="active">About</a>
+        <a routerLink="/signup" routerLinkActive="active">Signup</a>
+        
+    </nav>
+</header>

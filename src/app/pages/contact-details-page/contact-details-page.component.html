@@ -1,0 +1,16 @@
+<section *ngIf="contact$|async as contact" class="contact-details">
+    <button class="back-btn" (click)="onGoBack()">Back</button>
+    <section class="info">
+        <img src="https://robohash.org/{{contact._id}}?set=set5" alt="">
+        <h1>{{contact.name}}</h1>
+        <p>{{contact.email}}</p>
+        <p>{{contact.phone}}</p>
+        <p>{{contact.coins}}</p>
+    </section>
+    <div *ngIf="contactMoves.length > 0">
+        <h3>User Moves:</h3>
+        <moves-list *ngFor="let move of contactMoves" [move]="move">
+
+        </moves-list>
+    </div>
+</section>

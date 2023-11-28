@@ -1,0 +1,24 @@
+<main *ngIf="user$|async as user" class="container">
+    
+    <section class="flex align-center">
+        <img src="https://robohash.org/{{user.name}}?set=set4" alt="">
+        <div *ngIf="coins !== null && rate !== null">
+            <h2><b>Hello {{user.name}}!</b></h2>
+            <div class="flex align-center">
+                <img src="../../assets/img/coins.png" alt="img">
+                <p> <b>User Coins:</b> {{ coins }}</p>
+            </div>
+            <div class="flex align-center">
+                <img src="../../assets/img/bitcoin.png" alt="img">
+                <p><b>Bitcoin Rate:</b> {{ rate }}</p>
+            </div>
+        </div>
+    </section>
+
+    <div *ngIf="userMoves.length > 0">
+        <h3>User Moves:</h3>
+        <moves-list *ngFor="let move of userMoves" [move]="move">
+
+        </moves-list>
+    </div>
+</main>

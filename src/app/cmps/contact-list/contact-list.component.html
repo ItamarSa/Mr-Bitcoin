@@ -1,0 +1,11 @@
+<!-- <section class="contact-list">
+    <ng-container *ngIf="selectedContact; else contactList">
+<contact-details-page (unselectedContact)="onGoBack()" [selectedContact]="selectedContact"></contact-details-page>
+    </ng-container> -->
+
+<!-- <ng-template #contactList> -->
+<section class="contact-list">
+    <contact-preview *ngFor="let contact of contacts; trackBy: trackByFn" [contact]="contact" (remove)="remove.emit($event)"></contact-preview>
+</section>
+<!-- </ng-template> -->
+<!-- </section> -->
