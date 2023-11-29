@@ -6,7 +6,7 @@
     display: flex;
     cursor: pointer;
 
-    
+
     .info {
         height: 100%;
         padding: 10px;
@@ -15,7 +15,8 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
-        > p {
+
+        >p {
             margin: 0;
         }
 
@@ -32,7 +33,8 @@
             transition-duration: 0.3s;
             transition-property: transform, opacity;
 
-            .remove-btn, .edit-btn {
+            .remove-btn,
+            .edit-btn {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -43,30 +45,14 @@
                 border: none;
                 transition: 0.15s;
                 cursor: pointer;
-                &:hover {
-                    background-color:#66D3FA;
-                    color: white;
-                }
-            }
 
-            .edit-btn{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 2em;
-                height: 2em;
-                background-color: inherit;
-                border-radius: 100%;
-                border: none;
-                transition: 0.15s;
-                cursor: pointer;
                 &:hover {
                     background-color: #66D3FA;
                     color: white;
                 }
             }
 
-            .transfer-btn{
+            .edit-btn {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -77,6 +63,25 @@
                 border: none;
                 transition: 0.15s;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: #66D3FA;
+                    color: white;
+                }
+            }
+
+            .transfer-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 2em;
+                height: 2em;
+                background-color: inherit;
+                border-radius: 100%;
+                border: none;
+                transition: 0.15s;
+                cursor: pointer;
+
                 &:hover {
                     background-color: #66D3FA;
                     color: white;
@@ -91,4 +96,16 @@
         transform: translateX(0);
     }
 
+}
+
+@media (max-width: 600px) {
+    .contact-preview {
+        .info {
+            .actions {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+        }
+    }
 }

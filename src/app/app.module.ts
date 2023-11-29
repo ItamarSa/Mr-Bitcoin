@@ -18,6 +18,8 @@ import { FormsModule } from '@angular/forms';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { TransferFundComponent } from './cmps/transfer-fund/transfer-fund.component';
 import { MovesListComponent } from './cmps/moves-list/moves-list.component';
+import { ChartsComponent } from './cmps/charts/charts.component';
+import { WelcomeComponent } from './cmps/welcome/welcome.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { MovesListComponent } from './cmps/moves-list/moves-list.component';
     AboutComponent,
     SignupPageComponent,
     TransferFundComponent,
-    MovesListComponent
+    MovesListComponent,
+    ChartsComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
