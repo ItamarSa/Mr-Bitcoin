@@ -8,6 +8,7 @@ import { AboutComponent } from './cmps/about/about.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { TransferFundComponent } from './cmps/transfer-fund/transfer-fund.component';
 import { ChartsComponent } from './cmps/charts/charts.component';
+import { WelcomeComponent } from './cmps/welcome/welcome.component';
 
 const routes: Routes = [
   {
@@ -21,8 +22,9 @@ const routes: Routes = [
   { path: 'charts', component: ChartsComponent },
   { path: 'contact/:id', component: ContactDetailsPageComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'home/:id', component: HomePageComponent },
   { path: 'signup', component: SignupPageComponent },
+  { path: 'home/:id', component: HomePageComponent },
+  { path:'', component: WelcomeComponent },
 ]
 
 @NgModule({
