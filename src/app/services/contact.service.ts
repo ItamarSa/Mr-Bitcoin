@@ -71,7 +71,8 @@ export class ContactService {
         return {
             name: '',
             email: '',
-            phone: ''
+            phone: '',
+            coins: 10
         }
     }
     public setFilterBy(filterBy: ContactFilter) {
