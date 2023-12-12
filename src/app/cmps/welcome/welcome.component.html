@@ -6,8 +6,12 @@
         <img src="../../../assets/img/bitcoin.png" alt="">
         <h2>The only crypto wallet you’ll ever need</h2>
         <p>Buy, store, and do more with your crypto.</p>
-        <button [routerLink]="['/home', userId]" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
-            class="btn">Get Started</button>
+        <button *ngIf="userId; else loginButton" [routerLink]="['/home', userId]" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}" class="btn">Get Started</button>
+        <ng-template #loginButton>
+            <button [routerLink]="['/signup']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+                class="btn">Login</button>
+        </ng-template>
     </main>
     <footer>
         <p>&copy; 2023 MrBitcoin. All rights reserved to Itamar sasson.</p>
