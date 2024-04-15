@@ -20,6 +20,7 @@ import { TransferFundComponent } from './cmps/transfer-fund/transfer-fund.compon
 import { MovesListComponent } from './cmps/moves-list/moves-list.component';
 import { ChartsComponent } from './cmps/charts/charts.component';
 import { WelcomeComponent } from './cmps/welcome/welcome.component';
+import { UserMsgComponent } from './cmps/user-msg/user-msg.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { WelcomeComponent } from './cmps/welcome/welcome.component';
     TransferFundComponent,
     MovesListComponent,
     ChartsComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    UserMsgComponent
   ],
   imports: [
     BrowserModule,
